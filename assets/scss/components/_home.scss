@@ -4,43 +4,22 @@
 * ================
 */
 .home {
-  margin: var(--header-height) 0 0 0;
-
   &__container {
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
     align-content: center;
   }
-  &__data {
-    margin-bottom: 1rem;
-  }
-
   &__title {
     font-size: var(--biggest-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
   }
-
   &__subtitle {
     font-size: var(--h1-font-size);
     color: var(--title-color);
     margin-bottom: var(--mb-4);
   }
-
   &__img {
     width: 300px;
     justify-self: center;
-    animation: scroll 3s infinite;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
   }
 }

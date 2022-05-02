@@ -1,20 +1,13 @@
 /*
 * ================
-*     HOME 
+*     CONTACT 
 * ================
 */
-.about {
-  &__data {
+.contact {
+  &__container {
     text-align: center;
   }
-
   &__description {
     margin-bottom: var(--mb-3);
-  }
-
-  &__img {
-    width: 280px;
-    border-radius: 0.5rem;
-    justify-self: center;
   }
 }

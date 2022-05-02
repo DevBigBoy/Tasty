@@ -1,0 +1,106 @@
+/*
+* ================
+*   BreakPoints 
+* ================
+*/
+@media (min-width: 576px) {
+  .home__container,
+  .about__container,
+  .app__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about__data,
+  .about__initial,
+  .app__data,
+  .app__initial,
+  .contact__container,
+  .contact__initial {
+    text-align: initial;
+  }
+
+  .about__img,
+  .app__img {
+    width: 380px;
+    order: -1;
+  }
+  .contact {
+    &__container {
+      grid-template-columns: 1.75fr 1fr;
+      align-items: center;
+    }
+    &__button {
+      justify-self: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 8rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      gap: 2.5rem;
+      display: flex;
+    }
+
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .home__container {
+    height: 100vh;
+    justify-items: center;
+  }
+
+  .services__container,
+  .menu__container {
+    margin-top: var(--mb-6);
+  }
+
+  .menu {
+    &__container {
+      grid-template-columns: repeat(3, 210px);
+      column-gap: 4rem;
+    }
+    &__content {
+      padding: 1.5rem;
+    }
+    &__img {
+      width: 130px;
+    }
+  }
+  .app__store {
+    margin: 0 var(--mb-1) 0 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    margin-inline: auto;
+  }
+  .home__img {
+    width: 500px;
+  }
+  .about__container,
+  .app__container {
+    column-gap: 7rem;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+  .home__container {
+    height: 640px;
+  }
+}

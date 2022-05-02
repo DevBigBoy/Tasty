@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: var(--body-color);
 }
 
 .nav {
@@ -19,7 +19,7 @@
   justify-content: space-between;
 
   &__menu {
-    @media screen and (max-width: 767px) {
+    @media (max-width: 768px) {
       position: fixed;
       top: -100%;
       left: 0;
@@ -46,6 +46,7 @@
   }
 
   &__logo {
+    user-select: none;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -80,7 +81,6 @@
 
 /* Change background header */
 .scroll-header {
-  background-color: var(--body-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
