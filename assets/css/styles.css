@@ -239,17 +239,15 @@ img {
 *     HOME 
 * ================
 */
-.home * {
-  padding: 3px;
-  border: 2px solid red;
-}
-
 .home {
   margin: var(--header-height) 0 0 0;
 }
 .home__container {
   height: calc(100vh - var(--header-height));
   align-content: center;
+}
+.home__data {
+  margin-bottom: 1rem;
 }
 .home__title {
   font-size: var(--biggest-font-size);
@@ -264,8 +262,33 @@ img {
 .home__img {
   width: 300px;
   justify-self: center;
+  -webkit-animation: scroll 3s infinite;
+          animation: scroll 3s infinite;
 }
 
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /*
 * ================
 *     BUTTONS 
@@ -281,4 +304,21 @@ img {
 }
 .button:hover {
   background-color: var(--first-color-alt);
+}
+
+/*
+* ================
+*     HOME 
+* ================
+*/
+.about {
+  width: 280px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+.about__data {
+  text-align: center;
+}
+.about__description {
+  margin-bottom: var(--mb-3);
 }/*# sourceMappingURL=styles.css.map */

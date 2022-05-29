@@ -1,0 +1,17 @@
+/*
+* ================
+*     HOME 
+* ================
+*/
+.about {
+  &__data {
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: var(--mb-3);
+  }
+  width: 280px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
