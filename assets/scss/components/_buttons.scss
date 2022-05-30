@@ -1,0 +1,18 @@
+/*
+* ================
+*     BUTTONS 
+* ================
+*/
+
+.button {
+  display: inline-flex;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+}
